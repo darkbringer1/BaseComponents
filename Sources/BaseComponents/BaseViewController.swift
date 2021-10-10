@@ -2,7 +2,7 @@
 
 import UIKit
 
-class BaseViewController<V>: UIViewController {
+open class BaseViewController<V>: UIViewController {
     
     var viewModel: V!
     

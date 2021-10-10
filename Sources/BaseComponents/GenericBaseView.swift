@@ -4,7 +4,7 @@
 import Foundation
 import UIKit
 
-class GenericBaseView<T>: BaseView {
+open class GenericBaseView<T>: BaseView {
     
     private var data: T?
     

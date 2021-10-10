@@ -3,7 +3,7 @@
 
 import Foundation
 
-protocol GenericValueProtocol {
+public protocol GenericValueProtocol {
     associatedtype Value
     var value: Value { get }
 }

@@ -3,7 +3,7 @@
 
 import Foundation
 
-protocol GenericDataProtocol {
+public protocol GenericDataProtocol {
     
 }
 #endif
