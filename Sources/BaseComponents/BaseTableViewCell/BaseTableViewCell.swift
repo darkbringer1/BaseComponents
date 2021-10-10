@@ -1,6 +1,5 @@
 #if canImport(UIKit)
 
-
 import UIKit
 
 open class BaseTableViewCell: UITableViewCell, BaseTableViewCellProtocols {

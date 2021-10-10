@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  GenericBaseViewProtocols.swift
 //  
 //
 //  Created by DarkBringer on 10.10.2021.

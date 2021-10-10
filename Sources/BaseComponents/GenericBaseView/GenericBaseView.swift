@@ -1,11 +1,9 @@
 #if canImport(UIKit)
 
-
 import Foundation
 import UIKit
 
 open class GenericBaseView<T>: BaseView, GenericBaseViewProtocols {
-    
     
     private var data: T?
     
@@ -40,7 +38,6 @@ open class GenericBaseView<T>: BaseView, GenericBaseViewProtocols {
     open func returnData() -> T? {
         return data
     }
-    
     
 }
 #endif
