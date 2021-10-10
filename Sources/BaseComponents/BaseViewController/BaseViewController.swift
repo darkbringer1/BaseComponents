@@ -6,7 +6,7 @@ open class BaseViewController<V>: UIViewController, BaseViewControllerProtocols 
     
     var viewModel: V!
     
-    public convenience init(viewModel: V) {
+    open convenience init(viewModel: V) {
         self.init()
         self.viewModel = viewModel
     }
