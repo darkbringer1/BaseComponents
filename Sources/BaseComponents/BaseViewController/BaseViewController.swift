@@ -2,7 +2,7 @@
 
 import UIKit
 
-open class BaseViewController<V>: UIViewController, BaseViewControllerProtocols {
+open class BaseViewController<V>: UIViewController {
     
     public var viewModel: V!
     
@@ -17,7 +17,8 @@ open class BaseViewController<V>: UIViewController, BaseViewControllerProtocols 
     }
     
     open func prepareViewControllerConfigurations() { }
-    
+    public func setupConfig() { }
+    func setupLayerConfig() { }
 }
 
 #endif
