@@ -11,8 +11,15 @@ open class BaseTableViewCell: UITableViewCell, BaseTableViewCellProtocols {
         
     }
     
+    //    required public init?(coder: NSCoder) {
+    //        super.init(coder: fatalError("init no coder"))
+    //        setupView()
+    //        addMajorView()
+    //
+    //    }
     required public init?(coder: NSCoder) {
-        super.init(coder: coder)
+        fatalError("init(coder:) has not been implemented")
+//        super.init(coder: coder)
         setupView()
         addMajorView()
     }
