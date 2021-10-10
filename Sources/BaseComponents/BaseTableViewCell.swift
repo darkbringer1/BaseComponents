@@ -20,7 +20,7 @@ open class BaseTableViewCell: UITableViewCell {
     open func setupView() { }
     open func addMajorView() { }
     
-    open var identifier: String {
+    public var identifier: String {
         return String(describing: self)
     }
     
