@@ -14,7 +14,7 @@ open class GenericBaseView<T>: BaseView {
         loadDataView()
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
     }
     

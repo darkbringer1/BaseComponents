@@ -10,7 +10,7 @@ open class BaseView: UIView {
         setupViewConfigurations()
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         addMajorViewComponents()
         setupViewConfigurations()

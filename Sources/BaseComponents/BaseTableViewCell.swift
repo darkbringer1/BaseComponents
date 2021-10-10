@@ -12,7 +12,7 @@ open class BaseTableViewCell: UITableViewCell {
         
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         setupView()
         addMajorView()
