@@ -16,8 +16,8 @@ open class BaseView: UIView, BaseViewProtocols {
         setupViewConfigurations()
     }
     
-    public func addMajorViewComponents() { }
-    public func setupViewConfigurations() { }
+    open func addMajorViewComponents() { }
+    open func setupViewConfigurations() { }
     
 }
 #endif

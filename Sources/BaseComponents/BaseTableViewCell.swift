@@ -18,10 +18,10 @@ open class BaseTableViewCell: UITableViewCell, BaseTableViewCellProtocols {
         addMajorView()
     }
     
-    public func setupView() { }
-    public func addMajorView() { }
+    open func setupView() { }
+    open func addMajorView() { }
     
-    static var identifier: String {
+    open var identifier: String {
         return String(describing: self)
     }
     

@@ -19,7 +19,7 @@ open class GenericBaseView<T>: BaseView, GenericBaseViewProtocols {
         super.init(coder: coder)
     }
     
-    public func loadDataView() {
+    open func loadDataView() {
         
     }
     
@@ -32,12 +32,12 @@ open class GenericBaseView<T>: BaseView, GenericBaseViewProtocols {
 //        return data
 //    }
     
-    public func setData(by value: T?) {
+    open func setData(by value: T?) {
         self.data = value
         loadDataView()
     }
     
-    public func returnData() -> T? {
+    open func returnData() -> T? {
         return data
     }
     

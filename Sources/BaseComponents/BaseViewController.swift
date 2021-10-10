@@ -16,7 +16,7 @@ open class BaseViewController<V>: UIViewController, BaseViewControllerProtocols 
         prepareViewControllerConfigurations()
     }
     
-    public func prepareViewControllerConfigurations() { }
+    open func prepareViewControllerConfigurations() { }
     
 }
 #endif
