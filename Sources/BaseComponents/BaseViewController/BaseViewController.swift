@@ -6,7 +6,7 @@ open class BaseViewController<V>: UIViewController, BaseViewControllerProtocols 
     
     var viewModel: V!
     
-    convenience init(viewModel: V) {
+    public convenience init(viewModel: V) {
         self.init()
         self.viewModel = viewModel
     }
@@ -19,4 +19,5 @@ open class BaseViewController<V>: UIViewController, BaseViewControllerProtocols 
     open func prepareViewControllerConfigurations() { }
     
 }
+
 #endif
