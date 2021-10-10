@@ -4,7 +4,7 @@ import UIKit
 
 open class BaseViewController<V>: UIViewController, BaseViewControllerProtocols {
     
-    public var viewModel: V!
+    var viewModel: V!
     
     convenience init(viewModel: V) {
         self.init()
@@ -19,5 +19,4 @@ open class BaseViewController<V>: UIViewController, BaseViewControllerProtocols 
     open func prepareViewControllerConfigurations() { }
     
 }
-
 #endif
