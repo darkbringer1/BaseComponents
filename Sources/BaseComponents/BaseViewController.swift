@@ -2,7 +2,7 @@
 
 import UIKit
 
-open class BaseViewController<V>: UIViewController {
+open class BaseViewController<V>: UIViewController, BaseViewControllerProtocols {
     
     var viewModel: V!
     
@@ -16,9 +16,7 @@ open class BaseViewController<V>: UIViewController {
         prepareViewControllerConfigurations()
     }
     
-    func prepareViewControllerConfigurations() {
-        view.backgroundColor = .white
-    }
+    public func prepareViewControllerConfigurations() { }
     
 }
 #endif

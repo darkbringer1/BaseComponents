@@ -2,7 +2,7 @@
 
 import UIKit
 
-open class BaseView: UIView {
+open class BaseView: UIView, BaseViewProtocols {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -16,8 +16,8 @@ open class BaseView: UIView {
         setupViewConfigurations()
     }
     
-    func addMajorViewComponents() { }
-    func setupViewConfigurations() { }
+    public func addMajorViewComponents() { }
+    public func setupViewConfigurations() { }
     
 }
 #endif

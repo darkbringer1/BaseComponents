@@ -3,7 +3,7 @@
 
 import UIKit
 
-open class BaseTableViewCell: UITableViewCell {
+open class BaseTableViewCell: UITableViewCell, BaseTableViewCellProtocols {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -18,8 +18,8 @@ open class BaseTableViewCell: UITableViewCell {
         addMajorView()
     }
     
-    func setupView() { }
-    func addMajorView() { }
+    public func setupView() { }
+    public func addMajorView() { }
     
     static var identifier: String {
         return String(describing: self)

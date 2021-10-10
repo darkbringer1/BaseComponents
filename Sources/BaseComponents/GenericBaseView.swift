@@ -4,7 +4,8 @@
 import Foundation
 import UIKit
 
-open class GenericBaseView<T>: BaseView {
+open class GenericBaseView<T>: BaseView, GenericBaseViewProtocols {
+    
     
     private var data: T?
     
@@ -18,16 +19,25 @@ open class GenericBaseView<T>: BaseView {
         super.init(coder: coder)
     }
     
-    func loadDataView() {
+    public func loadDataView() {
         
     }
     
-    func setData(by value: T?) {
+//    func setData(by value: T?) {
+//        self.data = value
+//        loadDataView()
+//    }
+//
+//    func returnData() -> T? {
+//        return data
+//    }
+    
+    public func setData(by value: T?) {
         self.data = value
         loadDataView()
     }
     
-    func returnData() -> T? {
+    public func returnData() -> T? {
         return data
     }
     
