@@ -17,8 +17,7 @@ open class BaseViewController<V>: UIViewController {
     }
     
     open func prepareViewControllerConfigurations() { }
-    public func setupConfig() { }
-    func setupLayerConfig() { }
+    
 }
 
 #endif

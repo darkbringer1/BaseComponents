@@ -3,11 +3,11 @@
 import Foundation
 import UIKit
 
-open class GenericBaseView<T>: BaseView, GenericBaseViewProtocols {
+open class GenericBaseView<T>: BaseView {
     
     private var data: T?
     
-    init(frame: CGRect = .zero, data: T? = nil) {
+    public init(frame: CGRect = .zero, data: T? = nil) {
         self.data = data
         super.init(frame: frame)
         loadDataView()
@@ -17,18 +17,7 @@ open class GenericBaseView<T>: BaseView, GenericBaseViewProtocols {
         super.init(coder: coder)
     }
     
-    open func loadDataView() {
-        
-    }
-    
-//    func setData(by value: T?) {
-//        self.data = value
-//        loadDataView()
-//    }
-//
-//    func returnData() -> T? {
-//        return data
-//    }
+    open func loadDataView() { }
     
     open func setData(by value: T?) {
         self.data = value
