@@ -4,7 +4,7 @@ import UIKit
 
 open class BaseViewController<V>: UIViewController, BaseViewControllerProtocols {
     
-    open var viewModel = ViewModel.init(viewModel: V)
+    open var viewModel = ViewModel<Any>().viewModel
     
     convenience init(viewModel: V) {
         self.init()
