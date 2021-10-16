@@ -1,7 +1,6 @@
 #if canImport(UIKit)
-
 import UIKit
-
+#endif
 open class BaseView: UIView {
     
     public override init(frame: CGRect) {
@@ -20,4 +19,3 @@ open class BaseView: UIView {
     open func setupViewConfigurations() { }
     
 }
-#endif

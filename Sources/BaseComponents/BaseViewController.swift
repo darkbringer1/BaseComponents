@@ -1,7 +1,6 @@
 #if canImport(UIKit)
-
 import UIKit
-
+#endif
 open class BaseViewController<V>: UIViewController {
     
     public var viewModel: V!
@@ -19,5 +18,3 @@ open class BaseViewController<V>: UIViewController {
     open func prepareViewControllerConfigurations() { }
     
 }
-
-#endif

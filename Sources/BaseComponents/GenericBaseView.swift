@@ -1,7 +1,7 @@
 #if canImport(UIKit)
-
-import Foundation
 import UIKit
+#endif
+import Foundation
 
 open class GenericBaseView<T>: BaseView {
     
@@ -29,4 +29,3 @@ open class GenericBaseView<T>: BaseView {
     }
     
 }
-#endif

@@ -1,6 +1,6 @@
 #if canImport(UIKit)
-
 import UIKit
+#endif
 
 open class BaseTableViewCell: UITableViewCell {
     
@@ -25,4 +25,4 @@ open class BaseTableViewCell: UITableViewCell {
     }
     
 }
-#endif
+
