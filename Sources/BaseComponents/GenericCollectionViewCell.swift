@@ -10,6 +10,12 @@ open class GenericCollectionViewCell<DataType, ViewType: GenericBaseView<DataTyp
         return temp
     }()
     
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        //added major view add method
+        addMajorViews()
+    }
+    
     required public init?(coder: NSCoder) {
         super.init(coder: coder)
     }
