@@ -1,3 +1,10 @@
+//
+//  File.swift
+//
+//
+//  Created by DarkBringer on 17.10.2021.
+//
+
 #if canImport(UIKit)
 import UIKit
 #endif
@@ -18,7 +25,7 @@ open class GenericBaseView<T>: BaseView {
         loadDataView()
     }
     
-    required public init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
     

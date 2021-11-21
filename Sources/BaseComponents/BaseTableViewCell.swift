@@ -1,3 +1,10 @@
+//
+//  File.swift
+//
+//
+//  Created by DarkBringer on 10.10.2021.
+//
+
 #if canImport(UIKit)
 import UIKit
 #endif
@@ -11,7 +18,7 @@ open class BaseTableViewCell: UITableViewCell {
         
     }
     
-    required public init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupView()
         addMajorView()
