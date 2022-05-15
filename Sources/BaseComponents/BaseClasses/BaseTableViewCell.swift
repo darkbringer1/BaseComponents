@@ -10,26 +10,22 @@ import UIKit
 #endif
 
 open class BaseTableViewCell: UITableViewCell {
-    
     public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupView()
-        addMajorView()
-        
+        addViewComponents()
     }
-    
+
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
         setupView()
-        addMajorView()
+        addViewComponents()
     }
-    
-    open func setupView() { }
-    open func addMajorView() { }
-    
+
+    open func setupView() {}
+    open func addViewComponents() {}
+
     static public var identifier: String {
         return String(describing: self)
     }
-    
 }
-

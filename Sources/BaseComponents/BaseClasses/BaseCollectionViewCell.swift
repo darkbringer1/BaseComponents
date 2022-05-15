@@ -10,25 +10,22 @@ import UIKit
 #endif
 
 open class BaseCollectionViewCell: UICollectionViewCell {
-    
     public override init(frame: CGRect) {
         super.init(frame: frame)
-        addMajorViews()
         setupView()
+        addViewComponents()
     }
-    
+
     public required init?(coder: NSCoder) {
         super.init(coder: coder)
-        addMajorViews()
         setupView()
+        addViewComponents()
     }
-    
+
     open func setupView() {}
-    open func addMajorViews() {}
-    
-    public static var identifier: String {
+    open func addViewComponents() {}
+
+    static public var identifier: String {
         return String(describing: self)
     }
 }
-
-
